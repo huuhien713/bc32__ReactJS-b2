@@ -5,9 +5,109 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(../public/img/background.jpg) no-repeat;
+  background-size: 100vw 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header div {
+  color: white;
+  background-color: rgba(0,0,0, 0.5);
+}
+.header div p {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.avatar {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.8rem auto;
+}
+.avatar-wrap {
+  position: relative;
+  width: 25%;
+}
+.avatar > div > img {
+  width: 100%;
+}
+
+.glasses-list {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.glasses-list > div {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+.glasses-item {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+}
+.glasses-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.tryGlass {
+  position: absolute;
+  top: 85px;
+  left: 0;
+}
+.tryGlass img {
+  width: 50%;
+}
+.getInfoGlass {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  font-size: 13px;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  color: black;
+  /* background-color: rgba(0,0,0,0.3); */
+}
+.getInfoGlass span:first-child {
+  font-size: 18px;
+  color: blueviolet;
+  font-weight: 500;
+}
+
+.getInfoGlass span:nth-child(2) {
+  display: inline-block;
+  font-size: 18px;
+  color: blue;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.getInfoGlass p {
+  margin: 0;
 }
